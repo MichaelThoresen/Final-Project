@@ -4,11 +4,7 @@ body {
 }
 
 
-/*Nav bar*/
-
-div.nav {
-    width: 100%;
-}
+/*Nav bar*/ /*Legg inn ID/klasser spesifikt for navbar så alle lister ikke ser sånn her ut*/
 
 ul {
     list-style-type: none;
@@ -16,35 +12,24 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
-
 
 li {
-	float: left;
-	border-right: 1px solid #bbb;
+    float: left;
+	width: 25%;
 }
 
-li:last-child {
-    border-right: none;
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-li, div.nav a {
-	background-color: #657a43;
-	color: #FFFFFF;
-	height: 70px;
-	width: 24.95%;
-	text-decoration: none;
-	font-size: 40px;
-	padding-top: 20px;
-	text-align: center;
-}
-/*Nav bar end*/
-
- li a:hover {
-    background-color: #000;
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
 }
 
 /*Home page*/
@@ -71,13 +56,14 @@ div.container {
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
+	text-align: center;
 }
 /*Layout end*/
 
 
 /*Footer*/
 footer {
-	position: fixed;
+	
     left: 0;
     bottom: 0;
     width: 100%;
