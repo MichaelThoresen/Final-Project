@@ -82,6 +82,10 @@ p {
     text-align: center;
 }
 
+table {
+	border: 1px solid #364F66;
+}
+
 .students {
     display: table;
     border-collapse: separate;
